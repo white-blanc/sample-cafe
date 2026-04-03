@@ -2,7 +2,9 @@
 
 @use "./common";
 
-@use "./layout/main";
 @use "./layout/header";
+@use "./layout/main";
+@use "./layout/section";
+@use "./layout/title";
 
 @use "./object/project/top";
