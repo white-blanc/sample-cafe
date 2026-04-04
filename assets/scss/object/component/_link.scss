@@ -37,4 +37,10 @@
         transform: scale(0, 1);
         transition: 0.3s;
     }
+
+    &--white {
+        &::before {
+            border-color: c.$white;
+        }
+    }
 }

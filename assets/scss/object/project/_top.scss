@@ -90,4 +90,45 @@
 }
 
 .p-top-about {
+    position: relative;
+    color: c.$white;
+    z-index: 0;
+    text-shadow: 1px 1px 5px c.$black;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url("./../img/top/about-bg.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: -2;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: c.$black;
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    &__desc {
+    }
+
+    &__link {
+        display: flex;
+        justify-content: flex-end;
+        margin: 50px 0 0;
+    }
 }
