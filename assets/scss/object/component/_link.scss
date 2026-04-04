@@ -1,0 +1,40 @@
+@use "../../foundation/color" as c;
+@use "../../foundation/bp" as bp;
+
+.c-link {
+    display: block;
+    width: fit-content;
+    padding: 0.2em 1em 0.2em 0.5em;
+    text-decoration: none;
+    position: relative;
+
+    @include bp.bp(pc) {
+        &:hover {
+            &:after {
+                transform: scale(1, 1);
+            }
+        }
+    }
+
+    &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        border-top: 1px c.$black solid;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        border-top: 1px c.$main solid;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: scale(0, 1);
+        transition: 0.3s;
+    }
+}

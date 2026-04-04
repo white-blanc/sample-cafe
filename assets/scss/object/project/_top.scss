@@ -61,6 +61,12 @@
         list-style: none;
         gap: 20px;
     }
+
+    &__link {
+        display: flex;
+        justify-content: flex-end;
+        margin: 20px 0 0;
+    }
 }
 
 .p-top-menu {
@@ -75,4 +81,13 @@
         gap: 20px;
         list-style: none;
     }
+
+    &__link {
+        display: flex;
+        justify-content: flex-end;
+        margin: 20px 0 0;
+    }
+}
+
+.p-top-about {
 }

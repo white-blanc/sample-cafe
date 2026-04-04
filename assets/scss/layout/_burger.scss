@@ -75,5 +75,31 @@
                 transform: translate(-50%, -50%) rotate(45deg);
             }
         }
+
+        &__nav {
+            margin: 50px 0 0;
+        }
+
+        &__list {
+            list-style: none;
+            display: grid;
+            gap: 20px;
+        }
+
+        &__item {
+        }
+
+        &__link {
+            text-decoration: none;
+            display: grid;
+        }
+
+        &__jp {
+            font-size: 1.1em;
+        }
+
+        &__en {
+            font-size: 0.6em;
+        }
     }
 }
