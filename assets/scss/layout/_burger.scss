@@ -1,0 +1,79 @@
+@use "../foundation/color" as c;
+
+.l-burger {
+    $this: &;
+    display: none;
+
+    &__input {
+        display: none;
+
+        &:checked {
+            & + #{$this} {
+                display: block;
+
+                & #{$this}-main {
+                    transform: translate(-100%, 0);
+                    transition: 0.3s;
+                }
+            }
+
+            body:has(&) {
+                overflow: hidden;
+            }
+        }
+    }
+
+    &__bg {
+        display: block;
+        cursor: pointer;
+        background-color: c.$black;
+        opacity: 0.5;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        z-index: 1000;
+    }
+
+    &-main {
+        width: 90%;
+        max-width: 500px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 100%;
+        background-color: c.$white;
+        z-index: 1001;
+        transition: 0.3s;
+        overflow: auto;
+
+        &__inner {
+            padding: 20px 5% 150px;
+        }
+
+        &__close {
+            display: block;
+            margin: 0 0 0 auto;
+            aspect-ratio: 1 / 1;
+            width: 50px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        &__line {
+            width: 50%;
+            border-top: 1px c.$black solid;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            &:first-child {
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+
+            &:last-child {
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+        }
+    }
+}

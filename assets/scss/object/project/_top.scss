@@ -37,9 +37,42 @@
     }
 }
 
+.p-top-season-menu {
+    position: relative;
+    z-index: 0;
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-image: url("../img/top/sakura.jpg");
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-size: cover;
+    }
+
+    &__list {
+        display: grid;
+        list-style: none;
+        gap: 20px;
+    }
+}
+
 .p-top-menu {
     background-image: url("../img/top/menu-bg.png");
     background-repeat: repeat-y;
     background-position: center top;
     background-size: cover;
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        list-style: none;
+    }
 }

@@ -1,0 +1,51 @@
+@use "../../foundation/color" as c;
+
+.c-menu-item {
+    display: grid;
+    gap: 10px;
+
+    &__thumb {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        background-color: c.$gray;
+    }
+
+    &__title {
+        font-size: 1.1em;
+    }
+
+    &__price {
+        text-align: right;
+    }
+}
+
+.c-menu-item-special {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: flex-start;
+
+    &__thumb {
+        aspect-ratio: 4 / 3;
+        background-color: c.$gray;
+    }
+
+    &__content {
+        display: grid;
+        gap: 5px;
+        height: 100%;
+        grid-template-rows: min-content 1fr min-content;
+        padding: 10px 0;
+    }
+
+    &__title {
+        font-size: 1.2em;
+    }
+
+    &__desc {
+    }
+
+    &__price {
+        text-align: right;
+    }
+}

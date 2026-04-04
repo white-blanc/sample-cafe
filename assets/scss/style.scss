@@ -1,10 +1,15 @@
 @use "./foundation/reset";
 
+@use "./lib/animation";
+
 @use "./common";
 
+@use "./layout/burger";
 @use "./layout/header";
 @use "./layout/main";
 @use "./layout/section";
 @use "./layout/title";
+
+@use "./object/component/menu-item";
 
 @use "./object/project/top";

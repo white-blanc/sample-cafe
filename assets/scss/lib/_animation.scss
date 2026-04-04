@@ -1,0 +1,10 @@
+.animation-fade-in {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 1s ease-out;
+
+    &.is-show {
+        opacity: 1;
+        transform: none;
+    }
+}
