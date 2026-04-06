@@ -1,0 +1,8 @@
+@use "../../foundation/color" as c;
+
+.p-about {
+    &__content {
+        display: grid;
+        gap: 20px;
+    }
+}
