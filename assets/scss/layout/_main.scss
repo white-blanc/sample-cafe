@@ -1,6 +1,7 @@
-@use '../foundation/color' as c;
+@use "../foundation/color" as c;
 
-.l-main{
+.l-main {
     max-width: 500px;
     margin: 0 auto;
+    background-color: c.$white;
 }
