@@ -132,3 +132,75 @@
         margin: 50px 0 0;
     }
 }
+
+.p-top-access {
+    background-color: c.$white;
+
+    &__content {
+    }
+
+    &__list {
+        padding: 0 0 0 2em;
+        display: grid;
+        gap: 10px;
+    }
+
+    &__map {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        background-color: c.$gray;
+        margin: 50px 0 20px;
+    }
+}
+
+.p-top-information {
+    background-image: url("./../img/top/information-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    // color: c.$white;
+    // text-shadow: 1px 1px 5px c.$black;
+
+    &__inner {
+        padding: 20px;
+        backdrop-filter: blur(10px) brightness(120%);
+        background-color: rgba(c.$white, 0.5);
+    }
+
+    &__wrap {
+        display: grid;
+        list-style: none;
+        gap: 20px;
+    }
+
+    &__item {
+        text-decoration: none;
+        display: flex;
+        gap: 0.5em;
+        align-items: center;
+
+        &::after {
+            content: "";
+            display: block;
+            border-left: 0.5em c.$black solid;
+            border-top: 0.25em transparent solid;
+            border-bottom: 0.25em transparent solid;
+        }
+    }
+
+    &__link {
+        display: flex;
+        justify-content: flex-end;
+        margin: 50px 0 0;
+    }
+}
+
+.p-top-reserve {
+    background-color: c.$white;
+
+    &__link {
+        display: flex;
+        justify-content: flex-end;
+        margin: 50px 0 0;
+    }
+}
