@@ -1,0 +1,22 @@
+@use "../../foundation/color" as c;
+
+.p-menu {
+    &-season {
+        &__list {
+            display: grid;
+            gap: 20px;
+            list-style: none;
+        }
+    }
+
+    &__wrap {
+        margin: 80px 0 0;
+    }
+
+    &__list {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        list-style: none;
+    }
+}
