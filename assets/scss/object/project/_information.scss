@@ -1,0 +1,24 @@
+@use "../../foundation/color" as c;
+
+.p-information {
+    &__wrap {
+        display: grid;
+        list-style: none;
+        gap: 20px;
+    }
+
+    &__item {
+        text-decoration: none;
+        display: flex;
+        gap: 0.5em;
+        align-items: center;
+
+        &::after {
+            content: "";
+            display: block;
+            border-left: 0.5em c.$black solid;
+            border-top: 0.25em transparent solid;
+            border-bottom: 0.25em transparent solid;
+        }
+    }
+}
