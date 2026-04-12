@@ -1,0 +1,9 @@
+@use "../../foundation/color" as c;
+
+.p-reserve {
+    &__content {
+        > * {
+            margin: 0 0 1em;
+        }
+    }
+}
