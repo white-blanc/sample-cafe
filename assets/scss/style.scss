@@ -1,21 +1,22 @@
-@use "./foundation/reset";
+@forward "./foundation/reset";
 
-@use "./lib/animation";
+@forward "./lib/animation";
 
-@use "./common";
+@forward "./common";
 
-@use "./layout/burger";
-@use "./layout/footer";
-@use "./layout/header";
-@use "./layout/main";
-@use "./layout/page-title";
-@use "./layout/section";
-@use "./layout/title";
+@forward "./layout/burger";
+@forward "./layout/footer";
+@forward "./layout/header";
+@forward "./layout/information";
+@forward "./layout/main";
+@forward "./layout/page-title";
+@forward "./layout/section";
+@forward "./layout/title";
 
-@use "./object/component/link";
-@use "./object/component/menu-item";
+@forward "./object/component/link";
+@forward "./object/component/menu-item";
 
-@use "./object/project/about";
-@use "./object/project/information";
-@use "./object/project/menu";
-@use "./object/project/top";
+@forward "./object/project/about";
+@forward "./object/project/information";
+@forward "./object/project/menu";
+@forward "./object/project/top";
